@@ -1,0 +1,24 @@
+package com.example.demo.entities;
+
+import java.io.Serializable;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+@Document
+public class Offre implements Serializable{
+
+	@Id 
+	private String id;
+	private String nomOffre;
+	private String domaine;
+	private String description;
+	private String recuteurId;
+	
+	
+	
+	
+
+	
+}

@@ -1,0 +1,22 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+
+public class mainclass {
+
+	public static void main(String[] args) {
+		
+		System.out.println(System.currentTimeMillis());
+		
+		System.out.println(new java.util.Date().getTime());
+	
+	//System.out.println(Calendar.getlnstance().getTimelnMillis() );
+
+		TimeZone simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy").getTimeZone();
+		System.out.println(simpleDateFormat.format(22/15/1992));
+
+
+	}
+
+}

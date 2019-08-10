@@ -1,0 +1,78 @@
+package com.example.demo.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Dao.RecruteurRepository;
+import com.example.demo.entities.Recruteur;
+
+@RestController
+public class RecruteurServiceController {
+	@Autowired
+	private RecruteurRepository recruteurRepository;
+	
+	
+	
+	@RequestMapping("/saveR")
+	public Recruteur saveRecruteur(Recruteur r) {
+		
+		recruteurRepository.save(r);
+		return r ;
+	}
+	
+	
+	@RequestMapping("/allR")
+	public List <Recruteur> getRecruteurs(){
+		
+		
+		return recruteurRepository.findAll();
+		
+	}
+	
+	
+	
+	@RequestMapping("/recruteurs")
+
+	public Page<Recruteur>  getrecruteurs(int page){
+		
+	return recruteurRepository.findAll( PageRequest.of(0, 3));	
+	}
+	
+	
+	
+	@RequestMapping("/getR")
+	public Optional<Recruteur> getrecruteur(String ref) {
+		return recruteurRepository.findById(ref);	
+	
+	}
+	
+	@RequestMapping("/updateR")
+	public Recruteur update (Recruteur r){
+recruteurRepository.save(r);
+return r;
+}
+	
+	@RequestMapping("/deleteR")
+	public boolean delete(String ref) {
+			recruteurRepository.deleteById(ref);
+			return true;
+			
+		}
+	
+	@RequestMapping("/FMCR")
+	public List<Recruteur> recruteurParMC(String nomRecruteur ){
+		return recruteurRepository.recruteurparMC( nomRecruteur );
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}

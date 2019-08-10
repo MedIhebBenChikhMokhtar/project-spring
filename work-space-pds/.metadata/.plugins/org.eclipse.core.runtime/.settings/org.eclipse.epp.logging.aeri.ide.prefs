@@ -1,0 +1,11 @@
+anonymizeStackTraces=false
+configured=true
+eclipse.preferences.version=1
+reporterEmail=Habib.chamseeddine@gmail.com
+reporterName=Habib Chamse eddine
+resetSendMode=KEEP
+resetSendModeOn=0
+sendMode=NOTIFY
+servers/com.genuitec.eclipse.aeri.server1/configured=true
+servers/org.eclipse.epp.logging.aeri.ide.server/configured=true
+servers/org.jboss.tools/configured=true

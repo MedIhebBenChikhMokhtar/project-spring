@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="ConfigPdsServeur"/>
+<aop-project name="microServiceProduit"/>
+<aop-project name="clients"/>
+<aop-project name="test2-serviceconfig"/>
+<aop-project name="client"/>
+<aop-project name="Config_server"/>
+<aop-project name="Euerka-server"/>
+<aop-project name="RecruteurService"/>
+<aop-project name="test2"/>
+<aop-project name="test"/>
+<aop-project name="ds-serviceConfig"/>
+<aop-project name="serviceConfig"/>
+<aop-project name="OffreEmploiService"/>
+<aop-project name="Eurekajdid"/>
+<aop-project name="EurekaServer"/>
+<aop-project name="lignecommande"/>
+</aop-reference-model>

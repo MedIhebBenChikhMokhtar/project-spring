@@ -1,0 +1,8 @@
+package com.example.demo.feignpds;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClientent ("")
+public interface Ifeign_Recruteur {
+
+}

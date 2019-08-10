@@ -1,0 +1,81 @@
+package com.example.demo.entities;
+
+import java.io.Serializable;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+@Document
+public class Offre implements Serializable{
+
+	@Id 
+	private String id;
+	private String nomOffre;
+	private String domaine;
+	private String description;
+	private String recuteurId;
+	
+	
+	
+	
+	
+	public Offre() {
+		super();
+	}
+
+
+	public Offre(String nomOffre, String domaine, String description, String id_R) {
+		super();
+		this.nomOffre = nomOffre;
+		this.domaine = domaine;
+		this.description = description;
+		this.id_R = id_R;
+	}
+
+	
+	
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getNomOffre() {
+		return nomOffre;
+	}
+	public void setNomOffre(String nomOffre) {
+		this.nomOffre = nomOffre;
+	}
+	public String getDomaine() {
+		return domaine;
+	}
+	public void setDomaine(String domaine) {
+		this.domaine = domaine;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getId_R() {
+		return id_R;
+	}
+	public void setId_R(String id_R) {
+		this.id_R = id_R;
+	}
+
+
+	public String getRecuteurId() {
+		return recuteurId;
+	}
+
+
+	public void setRecuteurId(String recuteurId) {
+		this.recuteurId = recuteurId;
+	}
+	
+	
+}
